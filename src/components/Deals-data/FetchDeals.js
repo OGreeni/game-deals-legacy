@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Deals from './Deals';
-import './FetchDeals.css';
 
 const FetchDeals = (props) => {
   const [dealsData, setDealsData] = useState([]);
@@ -19,7 +18,6 @@ const FetchDeals = (props) => {
 
   return (
     <>
-      <br />
       {props.finalFormData === '' && <p>No deals found.</p>}
       {props.finalFormData !== '' && <Deals dealsData={dealsData} />}
     </>

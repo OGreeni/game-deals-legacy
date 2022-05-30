@@ -1,16 +1,15 @@
 import React from 'react';
 import GameForm from './components/UI/GameForm';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
+import classes from './App.module.css';
 
 const App = () => {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand>GameDeals</Navbar.Brand>
-        </Container>
-      </Navbar>
+      <nav className={classes.navbar}>
+        <a className={classes['navbar__brand']} href="index.html">
+          GameDeals
+        </a>
+      </nav>
       <div className="container fluid">
         <GameForm />
       </div>

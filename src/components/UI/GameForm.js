@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import FetchDeals from '../Deals-data/FetchDeals';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import './GameForm.css';
 
 const GameForm = () => {
   const [formData, setFormData] = useState('');

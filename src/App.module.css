@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  background: #353535;
+  padding: 20px;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar__brand {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+.navbar__brand:hover {
+  border-bottom: 5px solid white;
+  color: rgb(255, 255, 255);
+}

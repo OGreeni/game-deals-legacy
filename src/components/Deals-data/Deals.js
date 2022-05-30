@@ -1,6 +1,4 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import classes from './Deals.module.css';
 
 const Deals = (props) => {
@@ -9,24 +7,24 @@ const Deals = (props) => {
     return { ...dealData, key: index };
   });
 
-  function dealClickHandler(...args) {
+  const dealClickHandler = (...args) => {
     window.location.href = `https://www.cheapshark.com/redirect?dealID={${args[0]}}`;
-  }
+  };
 
   return transformedDealsData.map((deal) => {
     return (
-      <button
-        className={classes.box}
-        onClick={dealClickHandler.bind(null, deal.cheapestDealID)}
-      >
-        <Card style={{ height: '14rem', width: '18rem' }}>
-          <Card.Img variant="top" src={deal.thumb} style={{ height: '8rem' }} />
-          <Card.Body>
-            <Card.Title>{deal.external}</Card.Title>
-            <Card.Title>Cheapest price: ${deal.cheapest}</Card.Title>
-          </Card.Body>
-        </Card>
-        <br />
+      <button onClick={dealClickHandler.bind(null, deal.cheapestDealID)}>
+        <div className={classes.card}>
+          <img
+            className={classes['deal-image']}
+            src={deal.thumb}
+            alt={'Not found'}
+          />
+          <div>
+            <h1 className={classes.title}>{deal.external}</h1>
+            <h2 className={classes.price}>Cheapest price: ${deal.cheapest}</h2>
+          </div>
+        </div>
       </button>
     );
   });
