@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import FetchDeals from '../Deals-data/FetchDeals';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import classes from './GameForm.module.css';
 
 const GameForm = () => {
   const [formData, setFormData] = useState('');
@@ -19,21 +18,18 @@ const GameForm = () => {
 
   return (
     <>
-      <br />
-      <h1>Search to find deals!</h1>
-      <Form onSubmit={formSubmitHandler}>
-        <Form.Group className="mb-3">
-          <Form.Label>Enter Game Here:</Form.Label>
-          <Form.Control
-            onChange={formChangeHandler}
-            value={formData}
-            placeholder=" E.g. Minecraft"
-          />
-        </Form.Group>
-        <Button variant="warning" type="submit">
-          Get Deals!
-        </Button>
-      </Form>
+      <div className={classes['main-title']}>
+        <h1>GameDeals - Search to Find Deals!</h1>
+      </div>
+      <form onSubmit={formSubmitHandler}>
+        <input
+          onChange={formChangeHandler}
+          value={formData}
+          placeholder=" E.g. Minecraft"
+          type="text"
+        ></input>
+        <button type="submit">Get Deals!</button>
+      </form>
       <FetchDeals finalFormData={finalFormData} />
     </>
   );
