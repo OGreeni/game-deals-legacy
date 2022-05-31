@@ -13,19 +13,18 @@ const Deals = (props) => {
 
   return transformedDealsData.map((deal) => {
     return (
-      <button onClick={dealClickHandler.bind(null, deal.cheapestDealID)}>
-        <div className={classes.card}>
-          <img
-            className={classes['deal-image']}
-            src={deal.thumb}
-            alt={'Not found'}
-          />
-          <div>
-            <h1 className={classes.title}>{deal.external}</h1>
-            <h2 className={classes.price}>Cheapest price: ${deal.cheapest}</h2>
-          </div>
-        </div>
-      </button>
+      <div
+        className={classes.card}
+        onClick={dealClickHandler.bind(null, deal.cheapestDealID)}
+      >
+        <img
+          className={classes['deal-image']}
+          src={deal.thumb}
+          alt={'Not found'}
+        />
+        <h2 className={classes.title}>{deal.external}</h2>
+        <h3 className={classes.price}>Price: ${deal.cheapest}</h3>
+      </div>
     );
   });
 };

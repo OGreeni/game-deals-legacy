@@ -9,7 +9,6 @@ const App = () => {
         <a className={classes.active} href="#">
           GameDeals
         </a>
-        <a href="#">Get deals</a>
         <div className={classes['topnav-right']}>
           <a href="#">Log in</a>
           <a href="#">About</a>
