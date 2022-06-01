@@ -19,7 +19,7 @@ const GameForm = () => {
   return (
     <>
       <div className={classes['main-title']}>
-        <h1>GameDeals - Search to Find Deals!</h1>
+        <h1>🕹️ GameDeals - Search to Find Deals! 🕹️</h1>
       </div>
       <form onSubmit={formSubmitHandler}>
         <input
