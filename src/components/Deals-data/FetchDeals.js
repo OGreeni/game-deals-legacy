@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Deals from './Deals';
+import classes from './FetchDeals.module.css';
 
 const FetchDeals = (props) => {
   const [dealsData, setDealsData] = useState([]);
@@ -18,7 +19,9 @@ const FetchDeals = (props) => {
 
   return (
     <>
-      {props.finalFormData === '' && <p>No deals found.</p>}
+      {props.finalFormData === '' && (
+        <div className={classes['deal-status']}>No deals found.</div>
+      )}
       {props.finalFormData !== '' && <Deals dealsData={dealsData} />}
     </>
   );
