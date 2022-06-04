@@ -61,3 +61,19 @@ button[type='submit']:active {
   background: #ddd;
   color: black;
 }
+
+@media (max-width: 40rem) and (orientation: portrait) {
+  .main-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type='text'] {
+    margin: 1rem 1rem;
+    margin-top: 0;
+  }
+
+  button[type='submit'] {
+    padding: 1.5rem;
+  }
+}
