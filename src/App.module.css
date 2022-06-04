@@ -36,3 +36,12 @@ body {
 .topnav-right {
   float: right;
 }
+
+.github-link {
+  display: flex;
+  position: fixed;
+}
+
+.github-link-image {
+  width: 5rem;
+}

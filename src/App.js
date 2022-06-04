@@ -1,6 +1,7 @@
 import React from 'react';
 import GameForm from './components/UI/GameForm';
 import classes from './App.module.css';
+import githubLogo from './Dependencies/github-logo.png';
 
 const App = () => {
   return (
@@ -14,6 +15,15 @@ const App = () => {
           <a href="#">About</a>
         </div>
       </nav>
+      <div className={classes['github-link']}>
+        <a href="https://github.com/OGreeni/game-deals-site">
+          <img
+            className={classes['github-link-image']}
+            src={githubLogo}
+            alt="GitHub"
+          ></img>
+        </a>
+      </div>
       <div>
         <GameForm />
       </div>
