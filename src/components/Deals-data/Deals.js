@@ -17,12 +17,14 @@ const Deals = (props) => {
         className={classes.card}
         onClick={dealClickHandler.bind(null, deal.cheapestDealID)}
       >
-        <img
-          className={classes['deal-image']}
-          src={deal.thumb}
-          alt={'Not found'}
-        />
-        <h2 className={classes.title}>{deal.external}</h2>
+        <div className={classes.wrapper}>
+          <img
+            className={classes['deal-image']}
+            src={deal.thumb}
+            alt={'Not found'}
+          />
+          <h2 className={classes.title}>{deal.external}</h2>
+        </div>
         <h3 className={classes.price}>Price: ${deal.cheapest}</h3>
       </div>
     );

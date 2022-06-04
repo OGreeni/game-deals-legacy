@@ -20,7 +20,9 @@ const FetchDeals = (props) => {
   return (
     <>
       {props.finalFormData === '' && (
-        <div className={classes['deal-status']}>No deals found.</div>
+        <div className={classes.container}>
+          <div className={classes['deal-status']}>No deals found.</div>
+        </div>
       )}
       {props.finalFormData !== '' && <Deals dealsData={dealsData} />}
     </>

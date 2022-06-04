@@ -1,4 +1,4 @@
-.card {
+/* .card {
   background: rgb(245, 245, 245);
   height: 65px;
   border: 1px solid rgb(110, 110, 110);
@@ -33,4 +33,35 @@
   position: absolute;
   left: 75%;
   font-weight: 400;
+} */
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  background: rgba(128, 128, 128, 0.254);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.deal-image {
+  width: 6rem;
+  height: 3rem;
+  margin: 10px;
+}
+
+.title {
+  margin: 0;
+  font-weight: 400;
+}
+
+.price {
+  margin-right: 1rem;
+  font-weight: 400;
+  color: purple;
 }

@@ -18,11 +18,11 @@ const GameForm = () => {
 
   return (
     <>
-      <div className={classes['main-title']}>
+      <div className={classes['main-text']}>
         <h1>🕹️ GameDeals 🕹️</h1>
         <h2>Find the best deals around.</h2>
       </div>
-      <form onSubmit={formSubmitHandler}>
+      <form className={classes['main-form']} onSubmit={formSubmitHandler}>
         <input
           onChange={formChangeHandler}
           value={formData}

@@ -1,4 +1,11 @@
+body {
+  font-family: 'Games', sans-serif;
+}
+
 .topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
   background-color: #333;
@@ -9,7 +16,6 @@
 }
 
 .topnav a {
-  display: inline-block;
   text-decoration: none;
   font-size: 1.5rem;
   padding: 1rem 1rem;
