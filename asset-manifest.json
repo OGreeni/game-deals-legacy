@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/game-deals-site/static/css/main.0f836657.css",
+    "main.js": "/game-deals-site/static/js/main.9ddbdd5f.js",
+    "index.html": "/game-deals-site/index.html",
+    "main.0f836657.css.map": "/game-deals-site/static/css/main.0f836657.css.map",
+    "main.9ddbdd5f.js.map": "/game-deals-site/static/js/main.9ddbdd5f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f836657.css",
+    "static/js/main.9ddbdd5f.js"
+  ]
+}
